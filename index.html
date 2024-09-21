@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Help for Hemophilia</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="nav__logo">Help for Hemophilia</div>
+        <ul class="nav__links">
+          <li class="link"><a href="#">Home</a></li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="content">
+          <h1><span>Raising Awareness</span><br />for Hemophilia</h1>
+          <p>
+            Hemophilia affects millions worldwide, but with the right support and
+            resources, those living with it can lead fulfilling lives. We are here
+            to spread knowledge, offer assistance, and encourage people to learn
+            about this rare condition. Join us in our mission to support the
+            hemophilia community and bring hope to families across the globe.
+          </p>
+          <button class="btn">Learn More</button>
+        </div>
+        <div class="image">
+          <span class="image__bg"></span>
+          <img src="assets/header-bg.png" alt="header image" />
+          <div class="image__content image__content__1">
+            <span><i class="ri-user-3-line"></i></span>
+            <div class="details">
+              <h4>500+</h4>
+              <p>Dollars Raised</p>
+            </div>
+          </div>
+          <div class="image__content image__content__2">
+            <ul>
+              <li>
+                <span><i class="ri-check-line"></i></span>
+                Free Hemophilia Education
+              </li>
+              <li>
+                <span><i class="ri-check-line"></i></span>
+                Connect with Team
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+    </div>
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+  // Smooth page load transition
+  const container = document.querySelector(".container");
+  container.style.opacity = 0;
+  container.style.transition = "opacity 1.5s ease-in-out";
+  setTimeout(() => {
+    container.style.opacity = 1;
+  }, 100);
+
+  // Button hover effect
+  const buttons = document.querySelectorAll(".btn");
+  buttons.forEach((button) => {
+    button.addEventListener("mouseenter", () => {
+      button.style.transform = "scale(1.05)";
+      button.style.transition = "transform 0.3s ease";
+    });
+
+    button.addEventListener("mouseleave", () => {
+      button.style.transform = "scale(1)";
+    });
+  });
+});
+
+		</script>
+  </body>
+</html>
